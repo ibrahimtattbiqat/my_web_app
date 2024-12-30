@@ -51,16 +51,6 @@ class SideMenu extends StatelessWidget {
                   Navigator.pop(context);
                 },
               )),
-          // Obx(() => ListTile(
-          //       selected: menuControllerService.selectedKey.value == "nested",
-          //       selectedColor: Colors.blue,
-          //       title: const Text('Nested Page'),
-          //       onTap: () {
-          //         menuControllerService.updateSelectedKey("nested");
-          //         beamer.beamToNamed('/nested');
-          //         Navigator.pop(context);
-          //       },
-          //     )),
         ],
       ),
     );

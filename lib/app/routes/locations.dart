@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:my_web_app/modules/home/home_page.dart';
 import 'package:my_web_app/modules/insted/nested_page.dart';
 import 'package:my_web_app/modules/page1/page1.dart';
+import 'package:my_web_app/modules/page1/page1Binding.dart';
 import 'package:my_web_app/modules/page2/page2.dart';
 
 class HomeLocation extends BeamLocation<BeamState> {
@@ -24,6 +25,8 @@ class HomeLocation extends BeamLocation<BeamState> {
 class Page1Location extends BeamLocation<BeamState> {
   @override
   List<BeamPage> buildPages(BuildContext context, BeamState state) {
+    // Initialize the CounterController using GetX Binding
+    CounterBinding().dependencies();
     return [
       BeamPage(
           key: const ValueKey('page1'),
